@@ -2,7 +2,118 @@
 
 A ready-to-use implementation of the Model Context Protocol (MCP) that extends Claude with real-time weather data capabilities.
 
-[![MCP Demo](https://img.youtube.com/vi/Y4bpWRLdRoA/0.jpg)](https://youtu.be/Y4bpWRLdRoA?si=TVuUyR79K_N-Zxoo)
+When I first forked this, it had some issues:
+
+1) only by watching the YT video do you learn this requires doing the following, so make sure you do these steps:
+  
+1. Fork and clone
+2. cd to here
+3. npm install @modelcontextprotocol/sdk zod
+4. npm install @types/node typescript
+5. npm run build
+6. 
+4) only worked with Claud Desktop and getting that to work on Windows is not something I succeeded doing, so I want to add some instructions here on how to get this to work with Claude code:
+
+
+
+( I removed the large YT video thumbnail that used to be here )
+
+
+ ▐▛███▜▌   Claude Code v2.0.36
+▝▜█████▛▘  Sonnet 4.5 · API Usage Billing
+  ▘▘ ▝▝    /home/brett/mcp-weather-server
+
+> which mcp servers do you have access to?
+
+● I have access to one MCP server:
+
+  my-node-server (appears to be your weather MCP server)
+
+  This server provides two tools:
+  - get-alerts - Get weather alerts for a US state (takes a 2-letter state code)
+  - get-forecast - Get weather forecast for a location (takes latitude and longitude)
+
+  Based on the codebase context, this is the MCP weather server you've built using the National Weather
+  Service API. It's currently connected and available for me to use!
+
+  Would you like me to test it out by fetching some weather data?
+
+> using my custom weather mcp server, what is the weather in thousand oaks, ca?
+
+● I'll get the weather forecast for Thousand Oaks, CA using your weather MCP server. Thousand Oaks is
+  located at approximately latitude 34.17 and longitude -118.84.
+
+● my-node-server - get-forecast (MCP)(latitude: 34.17, longitude: -118.84)
+  ⎿  Forecast for 34.17, -118.84:                                                           
+
+     This Afternoon:
+     … +69 lines (ctrl+o to expand)
+
+● Perfect! Your custom weather MCP server is working great. Here's the weather forecast for Thousand
+  Oaks, CA:
+
+  Current Conditions (This Afternoon):
+  - 89°F and Mostly Sunny
+  - Wind: 5-15 mph from the NNE
+
+  Upcoming Highlights:
+  - Tonight: Dropping to 57°F, partly cloudy
+  - Veterans Day (Monday): Nice day at 80°F, mostly sunny
+  - Wednesday Night - Thursday: Rain expected with showers likely continuing through Friday
+  - Weekend: Clearing up with temps in the mid-60s, mostly sunny
+
+  Looks like there's some rain coming mid-week, but otherwise pleasant weather! Your MCP server
+  successfully fetched the forecast from the National Weather Service API.
+
+> /agents
+  ⎿  Agent changes:
+     Created agent: bash-menu-chat-builder
+
+> can you generate a bash script using the bash agent we just created that will create a text based bash
+ shell script that gets a prompt from the user, passes that prompt to local claude code, and then
+returns the reponse from claude code to the user?
+
+● I'll use the bash-menu-chat-builder agent to create an interactive bash script that lets you chat with
+   Claude Code from the terminal.
+
+● bash-menu-chat-builder(Create interactive bash chat script)
+  ⎿  Done (2 tool uses · 15.7k tokens · 50.9s)                                              
+
+● Perfect! I've created an interactive bash chat script for you at claude-chat.sh. The script provides a clean, user-friendly terminal interface to chat with Claude Code.
+
+  Key features:
+  - Continuous chat loop - have multiple conversations without restarting
+  - Color-coded interface (your messages in green, Claude's in blue)
+  - Special commands: exit/quit to leave, clear to clear screen, help for info
+  - Error handling and input validation
+  - Graceful exit with Ctrl+C
+
+  To use it:
+  ./claude-chat.sh
+
+  The script will continuously prompt you for messages, send them to Claude Code CLI, and display the responses in a nicely formatted way. Type exit when you're done chatting!
+
+  ========================================
+  Claude Code - Interactive Chat
+========================================
+
+Type your message and press Enter to send.
+Type exit, quit, or press Ctrl+C to exit.
+Type clear to clear the screen.
+Type help for usage information.
+
+You:
+
+
+
+
+
+
+
+
+
+
+  
 
 ## What is MCP?
 
