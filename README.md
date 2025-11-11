@@ -1,8 +1,7 @@
-# MCP Weather Server
+# Brett's Changes
 
-A ready-to-use implementation of the Model Context Protocol (MCP) that extends Claude with real-time weather data capabilities.
-
-When I first forked this, it only worked with Claud Desktop and getting that to work on Windows is not something I succeeded doing, so I want to add some instructions here on how to get this to work with Claude code:
+Really just the agent I created with claude, that I then prompted to create a bash script that would use the custom mcp server.
+Also: When I first forked this, it only worked with Claud Desktop and getting that to work on Windows is not something I succeeded doing, so I want to add some instructions here on how to get this to work with Claude code:
 
 claude mcp add my-node-server -- node /home/brett/mcp-weather-server/build/index.js 
 Added stdio MCP server my-node-server with command: node /home/brett/mcp-weather-server/build/index.js to local config
@@ -99,10 +98,9 @@ You:
 
 
 
+# MCP Weather Server
 
-
-
-
+A ready-to-use implementation of the Model Context Protocol (MCP) that extends Claude with real-time weather data capabilities.
 
 
 
