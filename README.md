@@ -2,22 +2,15 @@
 
 A ready-to-use implementation of the Model Context Protocol (MCP) that extends Claude with real-time weather data capabilities.
 
-When I first forked this, it had some issues:
+When I first forked this, it only worked with Claud Desktop and getting that to work on Windows is not something I succeeded doing, so I want to add some instructions here on how to get this to work with Claude code:
 
-1) only by watching the YT video do you learn this requires doing the following, so make sure you do these steps:
-  
-1. Fork and clone
-2. cd to here
-3. npm install @modelcontextprotocol/sdk zod
-4. npm install @types/node typescript
-5. npm run build
-6. 
-4) only worked with Claud Desktop and getting that to work on Windows is not something I succeeded doing, so I want to add some instructions here on how to get this to work with Claude code:
-
-
+claude mcp add my-node-server -- node /home/brett/mcp-weather-server/build/index.js 
+Added stdio MCP server my-node-server with command: node /home/brett/mcp-weather-server/build/index.js to local config
+File modified: /home/brett/.claude.json [project: /home/brett/mcp-weather-server]
 
 ( I removed the large YT video thumbnail that used to be here )
 
+Here is some text I copied from my run:
 
  ▐▛███▜▌   Claude Code v2.0.36
 ▝▜█████▛▘  Sonnet 4.5 · API Usage Billing
