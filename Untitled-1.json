@@ -1,0 +1,11 @@
+
+{
+  "mcpServers": {
+    "weather": {
+      "command": "node",
+      "args": [
+        "\\wsl.localhost\Ubuntu-22.04\home\brett\mcp-weather-server/build/index.js"
+      ]
+    }
+  }
+}
