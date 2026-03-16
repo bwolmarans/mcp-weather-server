@@ -2,9 +2,13 @@
 
 Really just the agent I created with claude, that I then prompted to create a bash script that would use the custom mcp server.
 Also: When I first forked this, it only worked with Claud Desktop and getting that to work on Windows is not something I succeeded doing, so I want to add some instructions here on how to get this to work with Claude code:
-
-claude mcp add my-node-server -- node /home/brett/mcp-weather-server/build/index.js 
-Added stdio MCP server my-node-server with command: node /home/brett/mcp-weather-server/build/index.js to local config
+```
+claude mcp add my-node-server -- node /home/brett/mcp-weather-server/build/index.js
+```
+Added stdio MCP server my-node-server with command: 
+```
+node /home/brett/mcp-weather-server/build/index.js to local config
+```
 File modified: /home/brett/.claude.json [project: /home/brett/mcp-weather-server]
 
 ( I removed the large YT video thumbnail that used to be here )
